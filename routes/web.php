@@ -14,11 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('home');
+})->name('homepage');
 Route::get('/about', function () {
     return view('about');
-});
+})->name('aboutpage');
+Route::get('/kontact', function () {
+    return view('contact');
+})->name('contactpage');
 Route::get('/about/{name}', function ($name) {
     $name=strtoupper($name);
     return $name;
