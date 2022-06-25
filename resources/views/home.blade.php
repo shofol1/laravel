@@ -4,10 +4,16 @@
 <h1>Welcome to Home page</h1>
 @endsection
 
+@section('extra')
+    <p>hello</p>
+
+    @parent
+@endsection
+
 @section('style')
     <style>
         body{
-            background: red;
+            background: #ddd;
         }
     </style>
 @endsection
